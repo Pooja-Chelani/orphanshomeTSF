@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14d91ba717.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+<style>
+     body,html{
+    min-height:100%;
+}
+body{
+    background-image:url('./images/aboutback.jpg') ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+
+    .section-third {
+    width: 100%;
+    height: 70rem;
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding: 3rem 20rem;
+  }
+  
+  .section-third h2 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+    text-align: center;
+    color:crimson;
+  }
+  
+  .section-third p {
+    width: 32rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+    font-size:1.5rem;
+    
+  }
+  
+  .section-third .section-third-task {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  
+  .section-third .section-third-task .task-1,
+  .section-third .section-third-task .task-2,
+  .section-third .section-third-task .task-3 {
+    padding-top: 3rem;
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+    margin-top:20px;
+    background-color: pink;
+  }
+  
+  .section-third .section-third-task .task-1 h3,
+  .section-third .section-third-task .task-2 h3,
+  .section-third .section-third-task .task-3 h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    color:blueviolet;
+  }
+  
+  .section-third .section-third-task .task-1 img,
+  .section-third .section-third-task .task-2 img,
+  .section-third .section-third-task .task-3 img {
+    width: 15rem;
+    height: 15rem;
+    transition: all 0.3s;
+    border-radius: 20%;
+  }
+  
+  .section-third .section-third-task .task-1 img,
+  .section-third .section-third-task .task-2 img {
+    height: 16rem;
+  }
+  
+ /* .section-third .section-third-task .task-3 {
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+  }*/
+  
+  .section-third .section-third-task .task-1:hover,
+  .section-third .section-third-task .task-2:hover,
+  .section-third .section-third-task .task-3:hover {
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+  }
+  
+  .section-third .section-third-task .task-1:hover > img,
+  .section-third .section-third-task .task-2:hover > img,
+  .section-third .section-third-task .task-3:hover > img {
+    transform: rotate(360deg);
+  }
+  button{
+    height: 40px;
+    width: 30%;
+    margin: 24px auto;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background: linear-gradient(to left bottom, #71d7e9, #1b40e2);
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size:1.5rem;
+}
+button:hover{
+    background: linear-gradient(to right top, #f13615, #e4d509);
+    transition: 2s;
+}
+  
+</style>
+<body>
+    <!-- navbar -->   
+   
+      <div class="navv">
+    
+        <div class="logo">
+            <h3> 💗 Warm Hearts Orphan Home 💗</h3>
+        
+        <button class="navbar-toggler"  id="burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!--<span class="navbar-toggler-icon"></span>-->
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+           
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why-orphans.html">Why-Orphans</a>
+              </li>
+            
+        </ul>
+      </div>
+      </div>
+    </div>
+        
+    <!-- about -->
+    <h1 class="abt-h1">A little About Us</h1>
+    <section id="tag">
+
+        <div class="tag tag2 container">
+            <div class="about-img">
+                <div class="tag-img-wrapper tag2-img" style="margin-right:50px;">
+                    <img src="images/aboutA.jpg" alt="nope"  >
+                </div>  
+            </div>
+
+            <br>
+            <div class="tag-info">
+                <h2 style="color:crimson">Who We Are?</h2>
+                <p class="tag-info-desc">In the heart of every child is a hunger for home.We are much more than a home for children from difficult and desperate circumstances,we are family where love guides us all as we grow and expand year after year.We are nearly self-sustaining organisation , a working farm,a vibrant school,receiving no goverment assistance of any kind.Take a look around and if you have any questions just get in contact with us .
+                </p>
+            </div>
+                       
+        </div>
+    </section>
+
+    <section class="section-third" id="section-third">
+        <h2>Why to Help us?</h2>
+        <p>
+          The world and global society benefit when we help orphan children.Instead of harming themselves and others,they grow up to be responsible,healthy,adults that give back to the community they live in instead of taking away from it.
+        </p>
+        <div class="section-third-task">
+          <div class="task-1">
+            <img src="images/1.png" alt="icon1" />
+            <h3>Our Beliefs</h3>
+            <p>
+             Warm House Orphan Home believes that there should be humanity around us and one small contibution
+             can save or make better life of a needy orphans
+            </p>
+          </div>
+  
+          <div class="task-2">
+            <img src="images/2.png" alt="icon2" />
+            <h3>Feels Good</h3>
+            <p>
+              Helping orphans,making them grow good financially,mentally and providing them love they deserve will serve good humanity.
+            </p>
+          </div>
+  
+          <div class="task-3">
+            <img src="images/3.png" alt="icon3" />
+            <h3>Assured Work</h3>
+            <p>
+              We assure you that your money won't get wasted and will let You know about every small contribution done by you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/pooja-chelani-63082a201" class="linkedin" target="_pooja">
+            click here to visit <i class="fab fa-linkedin"></i>
+          </a>
+        <a
+          href="https://www.instagram.com/_sentient_brim_"
+          class="instagram"
+          target="_pooja"
+        >
+          click here to visit <i class="fab fa-instagram"></i>
+        </a>
+    
+        <a href="https://t.me/Pooja_Chelani" class="telegram" target="_pooja">
+            click here to visit <i class="fab fa-telegram-plane"></i>
+          </a>
+        <a
+          href="#"
+          class="twitter"
+          target="_pooja"
+        >
+          click here to visit <i class="fab fa-twitter"></i>
+        </a>
+
+        
+        
+        <a href="#" class="facebook" target="_pooja">
+            click here to visit <i class="fab fa-facebook-f"></i>
+          </a>
+  
+      </div>
+    <!-- footer -->
+    <footer id="footer">
+
+        <p>© Copyright 2021 Warm Hearts Orphan Home ❤️
+            - Owned by Pooja Chelani
+     </p>
+
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>  
+</body>
+</html>
